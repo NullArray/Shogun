@@ -109,7 +109,7 @@ def resolve():
 	if logging == True:
 		print "[" + t.green("+") + "]Results saved to shogun.log in the current directory"
 		with open('shogun.log', 'ab') as log:
-			log.write("Time: %s\n" % ts)
+			log.write("\nTime: %s\n" % ts)
 			log.write("Shogun Resolver Results Log. Query -> %s\n" % query)
 			for items in data[2]:
 				log.write("%s\n" % items)
@@ -140,7 +140,7 @@ def ports():
 		if logging == True:
 			print "[" + t.green("+") + "]Results saved to shogun.log in the current directory"
 			with open('shogun.log', 'ab') as log:
-				log.write("Time: %s" % ts)
+				log.write("\nTime: %s\n" % ts)
 				log.write("Shogun Ports and Services Results Log. Query -> %s\n" % query)
 				for service in result['data']:
 					log.write("\t- Running %s on port %d" % (service.get('product', 'unknown service'), service['port']))
@@ -171,7 +171,7 @@ def platform():
 	if logging == True:
 		print "[" + t.green("+") + "]Results saved to shogun.log in the current directory"
 		with open('shogun.log', 'ab') as log:
-			log.write("Time: %s\n" % ts)
+			log.write("\nTime: %s\n" % ts)
 			log.write("Shogun Platform Results Log. Query -> %s\n" % query)
 			for service in result['matches']:
 				log.write(service['ip_str'])
@@ -235,7 +235,7 @@ def summary():
 	if logging == True:
 		print "[" + t.green("+") + "]Results saved to shogun.log in the current directory"
 		with open('shogun.log', 'ab') as log:
-			log.write("Time: %s\n" % ts)
+			log.write("\nTime: %s\n" % ts)
 			log.write("Shogun Summary Results Log. Query -> %s\n" % query)
 			for facet in result['facets']:
 				log.write(FACET_TITLES[facet])
