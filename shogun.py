@@ -239,7 +239,7 @@ def summary():
 			log.write("Time: %s\n" % ts)
 			log.write("Shogun Summary Results Log. Query -> %s\n" % query)
 			for facet in result['facets']:
-				log.write(FACET_TITLES[facets])
+				log.write(FACET_TITLES[facet])
 				log.write("\n")
 				for term in result['facets'][facet]:
 					log.write("%s: %s" % (term['value'], term['count']))
