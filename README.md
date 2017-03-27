@@ -10,11 +10,11 @@ Features include the ability to resolve domains, check if a host IP has any port
 ## Usage
 
 Cloning the repo.
-``
+```
 git clone https://github.com/NullArray/Shogun.git
 cd Shogun
 python shogun.py
-``
+```
 
 The commands for Shogun are as follows.
 ```
