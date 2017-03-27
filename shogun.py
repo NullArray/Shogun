@@ -111,9 +111,9 @@ def resolve():
 		with open('shogun.log', 'ab') as log:
 			log.write("Time: %s\n" % ts)
 			log.write("Shogun Resolver Results Log. Query -> %s\n" % query)
-			for items in data:
-				log.write(items)
-				log.write("\n")
+			for items in data[2]:
+				print items
+				log.write("%s\n" % items)
 		
 	main()  
 
