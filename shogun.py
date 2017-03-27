@@ -72,16 +72,17 @@ def key():
 		
 		print "\n[" + t.green("+") + "]Your API key was loaded from " + path
 		
+		print "\n[" + t.green("+") + "]Welcome to Shogun."
+		print "[" + t.green("+") + "]This program serves as a simple CLI to the Shodan.io search engine." 
+		print "[" + t.green("+") + "]Type the command 'help' to show which options are available to you.\n\n"
+		
 	try:
 		api = shodan.Shodan(SHODAN_API_KEY) 
 	except Exception as e:
 		print "\n[" + t.red("!") + "]Critical. API setup failed.\n"
 		print e
 		sys.exit(0)
-		
-		print "[" + t.green("+") + "]\n\nWelcome to Shogun."
-		print "[" + t.green("+") + "]This program serves as a CLI to the shodan.io search engine." 
-		print "[" + t.green("+") + "]Type the command 'help' to show which options are available to you.\n\n"
+
 	
 	main()
 
