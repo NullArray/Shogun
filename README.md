@@ -17,7 +17,7 @@ python shogun.py
 ``
 
 The commands for Shogun are as follows.
-``
+```
 Help    - Print usage information" 
 Resolve - Query DNS to retrieve a domain's associated IP address
 Ports   - Retrieve ports/services associated with provided host IP
@@ -26,15 +26,15 @@ Summary - Provide a summary of information on provided search item. I.E. 'IIS' w
 Logging - Enable or disable search result logging(Disabled by default)
 Api     - Display API key info and/or change API key
 Quit    - Exit Shogun
-``
+```
 
 ## Dependencies
 
 Besides the Shodan module Shogun makes use of Blessings as well for formatting purposes. Should you find you do not have these installed please use `pip` to get them like so.
-``
+```
 pip install shodan
 pip install blessings
-``
+```
 Or feel free to use the requirements file i have made for this program.
 
 `pip install -r requirements.txt`
