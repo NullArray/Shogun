@@ -32,6 +32,10 @@ print t.cyan("\n		SHOGUN - Shodan Command Line Interface\n")
 def key():
 	global api
 	if reset == True:
+		
+		if os.path.isfile("api.p"):
+			path = os.path.abspath("api.p")
+		
 		try:
 			os.remove(path)
 		except:
