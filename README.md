@@ -1,9 +1,9 @@
 # Shogun
 Shodan.io Command Line Interface
 
-Shogun is a custom CLI for the Shodan.io search engine. It is designed to look and feel like a "shell" to the Shodan database. This way we can simply input commands to have the program perform various operations. As such Shogun aims to be a comprehensive assistant in the process of gathering open source intelligence.
+Shogun is a custom CLI for the Shodan.io search engine. The interface is designed to resemble a "shell" to the Shodan database. This way we can simply input commands to have the program perform various operations. As such Shogun aims to be a comprehensive assistant in the process of gathering open source intelligence.
 
-Features include the ability to resolve domains, check if a host IP has any ports with certain services running and attempts to enumerate these services. It can also provide a summary of all the information Shodan has on platforms such as 'IIS' or Apache etc and includes a feature to log all information gathered in this manner. 
+Features include the ability to resolve domains, check if a host IP has any ports with certain services running and attempts to enumerate these services. It can also provide a summary of all the information Shodan has on platforms such as 'IIS' or Apache etc and includes a feature to log all information gathered in this manner and more. 
 
 
 ## Usage
@@ -24,7 +24,7 @@ Platform- Retrieve IPs associated with platform. I.E. 'Routers' returns a list o
 Summary - Provide a summary of information on provided search item. I.E. 'IIS' will provide top results for 'IIS'
 Logging - Enable or disable search result logging(Disabled by default)
 Api     - Display API key info and/or change API key
-Quit    - Exit Shogun
+Quit/Q  - Exit Shogun
 ```
 
 ## Dependencies
