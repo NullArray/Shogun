@@ -308,7 +308,7 @@ def main():
 				reet = False
 				
 				
-		elif query == "quit":
+		elif query == "quit" or "q":
 			sys.exit(0)
 		else:
 			print "[" + t.red("!") + "]Unhandled option"
