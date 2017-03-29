@@ -277,7 +277,7 @@ def main():
 		elif query == "logging":
 			
 			print "[" + t.magenta("?") + "]Enable logging?\n"
-			logs = raw_input("[Y]es/[No]: ")
+			logs = raw_input("[Y]es/[N]o: ")
 			
 			if logs == "y":
 				print "[" + t.green("+") + "]Logging enabled"
