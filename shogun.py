@@ -42,7 +42,7 @@ def key():
 			print "\n[" + t.red("!") + "]Critical. Deleting old API key file failed"
 			print "[" + t.magenta("?") + "]Continue with old APY key?\n"
 			
-			query = raw_input("[Y]es/[N]o]: ")
+			query = raw_input("[Y]es/[N]o: ")
 			if query == "y":
 				main()
 			elif query == "n":
