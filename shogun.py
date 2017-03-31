@@ -231,6 +231,7 @@ def summary():
 		print "[" + t.red("!") + "]Critical. An error was raised with the following error message.\n"
 		print e 
 		print "\n[" + t.green("+") + "]Defaulting to main menu."
+		main()
 
 	if logging == True:
 		print "[" + t.green("+") + "]Results saved to shogun.log in the current directory"
@@ -243,6 +244,7 @@ def summary():
 				for term in result['facets'][facet]:
 					log.write("%s: %s" % (term['value'], term['count']))
 					log.write("\n")
+	main()
 
 def commands():
 	print
