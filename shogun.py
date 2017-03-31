@@ -42,7 +42,7 @@ def key():
 			print "\n[" + t.red("!") + "]Critical. Deleting old API key file failed"
 			print "[" + t.magenta("?") + "]Continue with old APY key?\n"
 			
-			query = raw_input("[Y]es/[No]: ")
+			query = raw_input("[Y]es/[N]o]: ")
 			if query == "y":
 				main()
 			elif query == "n":
@@ -253,7 +253,7 @@ def commands():
 	print "[" + t.magenta("~") + "]Summary - Provide a summary of information on provided search item. I.E. 'IIS' will provide top results for 'IIS'"
 	print "[" + t.magenta("~") + "]Logging - Enable or disable search result logging(Disabled by default)"
 	print "[" + t.magenta("~") + "]Api     - Display API key info and/or change API key"
-	print "[" + t.magenta("~") + "]Quit    - Exit Shogun"
+	print "[" + t.magenta("~") + "]Quit/Q  - Exit Shogun"
 	
 		
 def main():
