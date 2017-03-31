@@ -297,7 +297,7 @@ def main():
 			
 			print "\n[" + t.green("+") + "]Current API key: %s" % (SHODAN_API_KEY)
 			print "\n[" + t.magenta("?") + "]Would you like to change your API key?"
-			change = raw_input("[Y]es/[No]: ")
+			change = raw_input("[Y]es/[N]o: ")
 			
 			if change == "y":
 				reset = True
