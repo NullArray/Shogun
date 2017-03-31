@@ -137,14 +137,14 @@ def ports():
 		print e 
 		print "\n[" + t.green("+") + "]Defaulting to main menu."
 		
-		if logging == True:
-			print "[" + t.green("+") + "]Results saved to shogun.log in the current directory"
-			with open('shogun.log', 'ab') as log:
-				log.write("\nTime: %s\n" % ts)
-				log.write("Shogun Ports and Services Results Log. Query -> %s\n" % query)
-				for service in result['data']:
-					log.write("\t- Running %s on port %d" % (service.get('product', 'unknown service'), service['port']))
-					log.write("\n")
+	if logging == True:
+		print "[" + t.green("+") + "]Results saved to shogun.log in the current directory"
+		with open('shogun.log', 'ab') as log:
+			log.write("\nTime: %s\n" % ts)
+			log.write("Shogun Ports and Services Results Log. Query -> %s\n" % query)
+			for service in result['data']:
+				log.write("\t- Running %s on port %d" % (service.get('product', 'unknown service'), service['port']))
+				log.write("\n")
 			
 	main()
 		
