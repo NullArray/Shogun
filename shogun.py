@@ -307,7 +307,7 @@ def main():
 				reset = False
 			else:
 				print "[" + t.red("!") + "]Unhandled option"
-				reet = False
+				reset = False
 				
 				
 		elif query == "quit" or "q":
