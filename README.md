@@ -17,7 +17,7 @@ python shogun.py
 
 The commands for Shogun are as follows.
 ```
-Help    - Print usage information" 
+Help    - Print usage information 
 Resolve - Query DNS to retrieve a domain's associated IP address
 Ports   - Retrieve ports/services associated with provided host IP
 Platform- Retrieve IPs associated with platform. I.E. 'Routers' returns a list of IPs that are classified as part of such
