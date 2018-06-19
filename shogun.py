@@ -33,8 +33,8 @@ def key():
 	global api
 	if reset == True:
 		
-		if os.path.isfile("api.p"):
-			path = os.path.abspath("api.p")
+		if os.path.isfile( os.path.expanduser(".config/api.p") ):
+			path = os.path.expanduser(".config/api.p")
 		
 		try:
 			os.remove(path)
@@ -53,22 +53,22 @@ def key():
 				main()
 				
 			
-	if not os.path.isfile("api.p"):
+	if not os.path.isfile(os.path.expanduser(".config/api.p")):
 		print "[" + t.green("+") + "]Please provide your Shodan.io API key."
 		
 	
 		SHODAN_API_KEY = raw_input("API key: ")
-		pickle.dump(SHODAN_API_KEY, open( "api.p", "wb" ))
+		pickle.dump(SHODAN_API_KEY, open( os.path.expanduser(".config/api.p"), "wb" ))
 		
-		print "\n[" + t.green("+") + "]Your API key has been saved to 'api.p' in the current directory.\n"
+		print "\n[" + t.green("+") + "]Your API key has been saved to 'api.p' in '~/.conifg'.\n"
 		
 		print "[" + t.green("+") + "]Welcome to Shogun."
 		print "[" + t.green("+") + "]This program serves as a simple CLI to the Shodan.io search engine." 
 		print "[" + t.green("+") + "]Type the command 'help' to show which options are available to you.\n\n"
 	
 	else:
-		path = os.path.abspath("api.p")
-		SHODAN_API_KEY = pickle.load(open( "api.p", "rb" ))
+		path = os.path.expanduser(".config/api.p")
+		SHODAN_API_KEY = pickle.load(open( os.path.expanduser(".config/api.p"), "rb" ))
 		
 		print "\n[" + t.green("+") + "]Your API key was loaded from " + path
 		
@@ -293,7 +293,7 @@ def main():
 				
 		elif query == "api":
 			
-			SHODAN_API_KEY = pickle.load(open( "api.p", "rb" ))
+			SHODAN_API_KEY = pickle.load(open( os.path.expanduser(".config/api.p"), "rb" ))
 			
 			print "\n[" + t.green("+") + "]Current API key: %s" % (SHODAN_API_KEY)
 			print "\n[" + t.magenta("?") + "]Would you like to change your API key?"
